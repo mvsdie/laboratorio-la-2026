@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>LaboratorioLA2026</RootNamespace>
+    <StartupObject>LaboratorioLA2026.My.MyApplication</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="MySqlConnector" Version="2.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="My Project/Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <None Update="My Project/Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Update="Formularios/frmLogin.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmLogin.Designer.vb"><DependentUpon>frmLogin.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmLogin.resx"><DependentUpon>frmLogin.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmPrincipal.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmPrincipal.Designer.vb"><DependentUpon>frmPrincipal.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmPrincipal.resx"><DependentUpon>frmPrincipal.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmPacientes.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmPacientes.Designer.vb"><DependentUpon>frmPacientes.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmPacientes.resx"><DependentUpon>frmPacientes.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmAnalisis.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmAnalisis.Designer.vb"><DependentUpon>frmAnalisis.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmAnalisis.resx"><DependentUpon>frmAnalisis.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmOrdenes.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmOrdenes.Designer.vb"><DependentUpon>frmOrdenes.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmOrdenes.resx"><DependentUpon>frmOrdenes.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmMuestras.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmMuestras.Designer.vb"><DependentUpon>frmMuestras.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmMuestras.resx"><DependentUpon>frmMuestras.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmDerivaciones.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmDerivaciones.Designer.vb"><DependentUpon>frmDerivaciones.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmDerivaciones.resx"><DependentUpon>frmDerivaciones.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmCentros.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmCentros.Designer.vb"><DependentUpon>frmCentros.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmCentros.resx"><DependentUpon>frmCentros.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmInsumos.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmInsumos.Designer.vb"><DependentUpon>frmInsumos.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmInsumos.resx"><DependentUpon>frmInsumos.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmMovimientosStock.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmMovimientosStock.Designer.vb"><DependentUpon>frmMovimientosStock.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmMovimientosStock.resx"><DependentUpon>frmMovimientosStock.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmUsuarios.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmUsuarios.Designer.vb"><DependentUpon>frmUsuarios.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmUsuarios.resx"><DependentUpon>frmUsuarios.vb</DependentUpon></EmbeddedResource>
+    <Compile Update="Formularios/frmFacturacion.vb"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios/frmFacturacion.Designer.vb"><DependentUpon>frmFacturacion.vb</DependentUpon></Compile>
+    <EmbeddedResource Update="Formularios/frmFacturacion.resx"><DependentUpon>frmFacturacion.vb</DependentUpon></EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../.local/conexion.ini" Condition="Exists('../.local/conexion.ini')">
+      <Link>conexion.ini</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+</Project>

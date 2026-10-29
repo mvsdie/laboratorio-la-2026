@@ -1,0 +1,44 @@
+# Visual Studio, compilación y configuración del equipo
+**/.vs/
+**/bin/
+**/obj/
+**/.local/
+**/packages/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.pdb
+TestResults/
+**/TestResults/
+
+# Accesos, credenciales y configuración generada localmente
+**/conexion.ini
+**/ACCESOS_DEMOSTRACION.txt
+**/accesos_demostracion.json
+**/.env
+**/.env.*
+**/credentials*
+**/credenciales*
+**/RESULTADO_*.txt
+**/usuarios_antes.json
+*.key
+*.pfx
+*.pem
+
+# Copias privadas, logs, temporales y publicaciones generadas
+**/respaldos/
+**/backups/
+**/logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.dmp
+publicacion/
+artefactos/
+*.zip
+
+# No ignorar Designer.vb, .resx, recursos, SQL ni packages.lock.json.

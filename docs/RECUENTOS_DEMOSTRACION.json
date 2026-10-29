@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-10-29",
+  "tablas": {
+    "centros_derivantes": 5,
+    "insumos": 20,
+    "obras_sociales": 1,
+    "pacientes": 20,
+    "roles": 3,
+    "ordenes": 21,
+    "usuarios": 3,
+    "analisis": 22,
+    "configuracion_tarifas": 1,
+    "cotizaciones": 8,
+    "movimientos_stock": 30,
+    "muestras": 20,
+    "coberturas_analisis": 5,
+    "derivaciones": 10,
+    "orden_analisis": 43,
+    "cotizacion_detalle": 19,
+    "muestra_analisis": 38
+  },
+  "usuarios_se_crean_con_claves_propias": true,
+  "credenciales_y_hashes_exportados": false,
+  "datos_son_ficticios": true,
+  "valor_ub_demostracion": 2400
+}
